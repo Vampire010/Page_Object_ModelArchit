@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">BookAnAppointment_test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,158</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LogInTest_TestNG_Runner</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,721</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">40,879</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BookAnAppointment_test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test_Runner.BookAnAppointment_test</td><td><a href="#m0">appointmentTest3</a></td><td rowspan="1">1673881459682</td><td rowspan="1">5012</td></tr><tr><th colspan="4">BookAnAppointment_test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Test_Runner.BookAnAppointment_test</td><td><a href="#m1">LogINTestRunner1</a></td><td rowspan="1">1673881434587</td><td rowspan="1">7792</td></tr><tr class="passedeven"><td><a href="#m2">appointmentTest1</a></td><td rowspan="1">1673881442382</td><td rowspan="1">5856</td></tr><tr class="passedeven"><td><a href="#m3">appointmentTest2</a></td><td rowspan="1">1673881448240</td><td rowspan="1">11440</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LogInTest_TestNG_Runner &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test_Runner.LogInTest_TestNG_Runner</td><td><a href="#m4">LogINTestRunner2</a></td><td rowspan="1">1673881464721</td><td rowspan="1">10718</td></tr></tbody>
+</table>
+<h2>BookAnAppointment_test</h2><h3 id="m0">Test_Runner.BookAnAppointment_test#appointmentTest3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;LAPTOP-DIJISBJ8&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//*[@id=&apos;combo_facility&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\giris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57999/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Page_Objects.MakeAppointmentPage.combo_facilityDropdown(MakeAppointmentPage.java:28)
+	at Test_Runner.BookAnAppointment_test.appointmentTest3(BookAnAppointment_test.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test_Runner.BookAnAppointment_test#LogINTestRunner1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test_Runner.BookAnAppointment_test#appointmentTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test_Runner.BookAnAppointment_test#appointmentTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LogInTest_TestNG_Runner</h2><h3 id="m4">Test_Runner.LogInTest_TestNG_Runner#LogINTestRunner2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
